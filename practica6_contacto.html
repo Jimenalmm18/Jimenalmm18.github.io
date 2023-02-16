@@ -5,15 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .menu{
+            background-color: rgb(229, 129, 233);
+            color: rgb(218, 126, 205);
+        }
+        .menu:hover{
+            background-color: plum;
+        }
+        a{
+            color: rgb(12, 8, 1);
+            text-decoration: none;
+            font-weight: bold;
+        } 
+        .contenido{
+            text-align: center;
+            border: 2px solid bisque;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding: 10px;
+        }    
+       
+    </style>
+
 </head>
 <body>
-    <h1>Contacto</h1><hr>
-    <h3>Correo Electronico</h3>
-    <p>almajimenalara130906@gmail.com</p>
-    <h3>Ubicación</h3>
-    <img src="mapa.jpg" alt="">
-    <div style="border: 1px solid black; padding: 10px; background-color: antiquewhite; text-align: center;">
-        <a href="practica6.html">Regresar al inicio</a>
+    <h1>Navegación en HTML</h1><hr>
+    <h3>Página de inicio</h3>
+        <div style="border: 1px solid black;">
+            <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+                <a href="practica6_noticias.html">Noticias</a>
+            </div>
+            <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+                <a href="practica6_galeria.html">Galería</a>
+            </div>
+            <div style="border-bottom: 1px solid black; padding: 10px;" class="menu">
+                <a href="practica6_contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div class="contenido">
+            <h1>Contacto</h1><hr>
+            <h3>Correo Electronico</h3>
+            <p>almajimenalara130906@gmail.com</p>
+            <h3>Ubicación</h3>
+            <img src="mapa.jpg" alt="">
+            <div style="border: 1px solid black; padding: 2px; background-color: plum; text-align: center;">
+                <a href="practica6.html">Regresar al inicio</a>
+        </div>
+   
     </div>
 </body>
 </html>
