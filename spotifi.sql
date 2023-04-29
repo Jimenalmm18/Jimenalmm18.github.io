@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-04-2023 a las 04:15:27
+-- Tiempo de generación: 29-04-2023 a las 10:52:12
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -39,10 +39,10 @@ CREATE TABLE `albumes` (
 --
 
 INSERT INTO `albumes` (`id`, `artista_id`, `nombre`) VALUES
-(1, 1, 'Vessel'),
-(2, 2, 'Aries'),
+(1, 1, 'Las guardadas'),
+(2, 2, 'Nevermind'),
 (3, 3, 'Un verano sin ti'),
-(4, 4, 'Home run');
+(4, 4, 'Mi vida loca');
 
 -- --------------------------------------------------------
 
@@ -83,10 +83,10 @@ CREATE TABLE `artistas` (
 --
 
 INSERT INTO `artistas` (`id`, `nombre`, `imagen`) VALUES
-(1, 'Twenty one pilots', 'https://media.timeout.com/images/103327219/image.jpg'),
-(2, 'Luis miguel', 'https://imagenes.elpais.com/resizer/0qkgT2RrF3RsR2ao0b2POrUxb5w=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NVBQKQRHGFDJRCC4Y7K2'),
+(1, 'Edicion especial', 'https://media.timeout.com/images/103327219/image.jpg'),
+(2, 'Nirvana', 'https://imagenes.elpais.com/resizer/0qkgT2RrF3RsR2ao0b2POrUxb5w=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/NVBQKQRHGFDJRCC4Y7K2'),
 (3, 'Bad bunny', 'https://yt3.googleusercontent.com/7tCfeCWH4arhsTM-4Rz4IxWieQbegzibeXlG-kbytAujdk5dr2K0gBb8NG0Cvk6lB1dPkjyd=s900-c-k-c0x00ffffff-no-rj'),
-(4, 'Paulo londra', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQjVausRrPshGW9OqCdY7YPVT1EEo1RhglvU74nMHGw&s');
+(4, 'Jenni Rivera', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQjVausRrPshGW9OqCdY7YPVT1EEo1RhglvU74nMHGw&s');
 
 -- --------------------------------------------------------
 
@@ -109,10 +109,10 @@ CREATE TABLE `canciones` (
 --
 
 INSERT INTO `canciones` (`id`, `nombre`, `artista_id`, `duracion`, `genero_id`, `fecha`, `disponible`) VALUES
-(1, 'Stressed Out', 1, '00:03:49', 11, '2015-04-18', 0),
-(2, 'Delirio', 2, '00:04:32', 12, '2008-05-18', 0),
+(1, 'Como burro sin mecate', 1, '00:03:17', 11, '2023-04-01', 0),
+(2, 'As you are', 2, '00:05:38', 12, '2018-05-18', 0),
 (3, 'Coco chanel', 3, '00:03:33', 10, '2023-03-16', 0),
-(4, 'Homerun', 4, '00:02:45', 11, '2019-06-02', 0);
+(4, 'Dama divina', 4, '00:02:38', 11, '2019-06-02', 0);
 
 -- --------------------------------------------------------
 
@@ -152,10 +152,10 @@ CREATE TABLE `generos` (
 --
 
 INSERT INTO `generos` (`id`, `nombre`) VALUES
-(9, 'kpop'),
-(10, 'reagueton'),
-(11, 'pop'),
-(12, 'jazz');
+(9, 'Regional mexicano'),
+(10, 'Pop'),
+(11, 'Reggaeton'),
+(12, 'Regional mexicano');
 
 -- --------------------------------------------------------
 
@@ -245,8 +245,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `contraseña`, `usuario`, `telefono`, `membresia_id`) VALUES
-(1, 'Nicolas felix aguilasocho', 'nicolasfelixag@gmail.com', '22373282', 'nicofa', '3324342423', 1),
-(2, 'Michelle gamez', 'michellegamez123@gmail.com', '23e2323', 'michellegamez', '232432323', 4),
+(1, 'Alma Jimena Lara Morneo', 'almita123@gmail.com', '6598210', 'jimenita', '6675690450', 1),
+(2, 'Miranda Salmon Moreno', 'miriisalmon@hotmail.com', '2259t51', 'miriiii', '232432323', 4),
 (3, 'Sofia Felix', 'sofifelixa@gmail.com', 'chocolateconfresa', 'sofiafelix21', '998172489', 2),
 (4, 'Joseph Eloir', 'mezacastañeda@gmail.com', '32454nN2', 'josefina', '763728992', 3);
 
