@@ -3,6 +3,7 @@
 
 
 $calificacion = 0;
+$nombre= $_POST["nombre"];
 
 $pregunta1 = $_POST["pregunta1"];
 $pregunta2 = $_POST["pregunta2"];
@@ -14,6 +15,11 @@ $pregunta7 = $_POST["pregunta7"];
 $pregunta8 = $_POST["pregunta8"];
 $pregunta9 = $_POST["pregunta9"];
 $pregunta10 = $_POST["pregunta10"];
+
+echo"<h2>Alumno:" .$nombre. "</h2>";
+
+echo"<h3>Resultado del examen php: </h3> <hr>";
+
 
 echo "<h3>Pregunta 1, respuesta seleccionada: (".$pregunta1.")</h3>";
 
@@ -116,4 +122,16 @@ if($pregunta10 == "b"){
 }
 
 
+
+if($calificacion>5 && $calificacion<=8){
+    echo "Felicidades!!! Pasaste con " .$calificacion;
+    echo "<img src='feliz.jpg' width='3%'>";
+
+}elseif($calificacion<5){
+    echo "No eres fan. Sacaste " . $calificacion;
+    echo "<img src='triste.jpg' width='3%'><hr>";
+}elseif($calificacion>8){
+    echo "Eres un fan de verdad!!! Terminaste con calificacion de ". $calificacion;
+    echo "<img src='excelente.png' width='3%'><hr>";
+}
 ?>
